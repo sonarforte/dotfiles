@@ -1,1 +1,3 @@
-prompt skwp
+#prompt skwp
+#prompt_agnoster_setup
+prompt_stagnoster_setup
