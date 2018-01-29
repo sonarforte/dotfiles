@@ -69,6 +69,8 @@ alias ve='vim ~/.vimrc'
 alias ze='vim ~/.zshrc'
 
 # Git Aliases
+alias gc='git commit -am'
+alias gp='git push'
 alias gs='git status'
 alias gstsh='git stash'
 alias gst='git stash'
@@ -213,4 +215,3 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 
 # Custom aliases
 alias nv='nvim'
-
