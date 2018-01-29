@@ -116,7 +116,24 @@ set smartcase       " ...unless we type a capital
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
 
-:let g:session_autosave = 'yes'
+let g:session_autosave = 'yes'
+let g:polyglot_disabled = ['latex']
+" let g:vimtex_latexmk_continuous
+
+" let g:vimtex_latexmk_progname
+
+" Wrap text sanely for text and markdown files, and add spellcheck
+autocmd BufRead,BufNewfile   *.md call WrapOn()
+autocmd BufRead,BufNewfile   *.txt call WrapOn()
+
+" Settings for wrapped text not code
+function WrapOn()
+    setlocal wrap linebreak spell spelllang=en_us
+    noremap  <buffer> <silent> j gj
+    noremap  <buffer> <silent> k gk
+    noremap  <buffer> <silent> 0 g0
+    noremap  <buffer> <silent> $ g$
+endfunction
 
 
-
+hi! Normal ctermbg=NONE
