@@ -125,6 +125,7 @@ let g:polyglot_disabled = ['latex']
 " Wrap text sanely for text and markdown files, and add spellcheck
 autocmd BufRead,BufNewfile   *.md call WrapOn()
 autocmd BufRead,BufNewfile   *.txt call WrapOn()
+autocmd BufRead,BufNewfile   *.tex call WrapOn()
 
 " Settings for wrapped text not code
 function WrapOn()
